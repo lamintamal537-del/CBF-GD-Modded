@@ -19,6 +19,7 @@ jobs:
         id: build
         uses: geode-sdk/build-geode-mod@main
         with:
+          sdk: latest
           target: Win64
 
       - name: Upload GEODE file
