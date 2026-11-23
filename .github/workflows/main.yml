@@ -19,7 +19,7 @@ jobs:
         id: build
         uses: geode-sdk/build-geode-mod@main
         with:
-          sdk: latest
+          sdk: v5.11.2
           target: Win64
           path: ./predictive-input-buffer-3.1.0-modified
           
