@@ -22,9 +22,10 @@ jobs:
           sdk: v5.11.2
           target: Win64
           path: ./predictive-input-buffer-3.1.0-modified
-          
+
       - name: Upload GEODE file
-  uses: actions/upload-artifact@v4
-  with:
-    name: CBF-Windows-geode
-    path: ${{ steps.build.outputs.build-output }}/*.geode
+        uses: actions/upload-artifact@v4
+        with:
+          name: CBF-Windows-geode
+          path: ${{ steps.build.outputs.build-output }}/*.geode
+          if-no-files-found: error
